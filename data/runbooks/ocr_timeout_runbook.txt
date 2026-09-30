@@ -1,0 +1,11 @@
+OCR Service Timeout Runbook
+
+Error Code: OCR_TIMEOUT
+
+When the OCR service times out, first verify that the OCR service is reachable and review recent automation logs.
+
+A retry may be attempted if the OCR service is available and the retry count is below 2.
+
+If two retry attempts fail, the incident must be escalated for manual investigation.
+
+OCR recovery does not require human approval when the retry policy conditions are satisfied.

@@ -1,0 +1,11 @@
+Authentication Failure Runbook
+
+Error Code: AUTH_TOKEN_EXPIRED
+
+An expired authentication token must not be resolved by repeatedly retrying the failed request.
+
+The authentication credentials or token must be refreshed through the approved credential-management process.
+
+Credential or authentication changes require human approval before any recovery action is executed.
+
+If approval is rejected, the incident must be escalated without modifying credentials.

@@ -1,0 +1,13 @@
+Queue Connection Failure Runbook
+
+Error Code: QUEUE_CONNECTION_TIMEOUT
+
+When the automation cannot connect to the transaction queue, verify queue availability and review connection logs.
+
+A connection retry may be attempted up to two times.
+
+The first retry may be performed automatically.
+
+If the first retry fails, human approval is required before the second retry.
+
+If the second retry fails, escalate the incident to the operations team.

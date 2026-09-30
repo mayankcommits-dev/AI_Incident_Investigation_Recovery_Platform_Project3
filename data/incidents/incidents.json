@@ -1,0 +1,29 @@
+[
+  {
+    "incident_id": "INC-1001",
+    "automation_name": "InvoiceProcessingBot",
+    "status": "OPEN",
+    "severity": "HIGH",
+    "error_code": "OCR_TIMEOUT",
+    "error_message": "OCR service timed out while extracting invoice data.",
+    "retry_count": 0
+  },
+  {
+    "incident_id": "INC-1002",
+    "automation_name": "PaymentReconciliationBot",
+    "status": "OPEN",
+    "severity": "CRITICAL",
+    "error_code": "AUTH_TOKEN_EXPIRED",
+    "error_message": "Payment API authentication token has expired.",
+    "retry_count": 0
+  },
+  {
+    "incident_id": "INC-1003",
+    "automation_name": "OrderProcessingBot",
+    "status": "OPEN",
+    "severity": "MEDIUM",
+    "error_code": "QUEUE_CONNECTION_TIMEOUT",
+    "error_message": "Connection to the transaction queue timed out.",
+    "retry_count": 0
+  }
+]
