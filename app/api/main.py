@@ -49,7 +49,10 @@ def investigate_incident_api(request: IncidentRequest):
         "action": result.get("action"),
         "approval_required": result.get("approval_required"),
         "retry_count": result.get("retry_count"),
-        "recovery_status": result.get("recovery_status")
+        "recovery_status": result.get("recovery_status"),
+        "investigation": result.get("investigation"),
+        "verification_passed": result.get("verification_passed"),
+        "duration_seconds": result.get("duration_seconds")
     }
 
 
@@ -62,8 +65,8 @@ def submit_approval(
 
     if decision not in {"approved", "rejected"}:
         raise HTTPException(
-        status_code=400,
-        detail="Decision must be 'approved' or 'rejected'."
+            status_code=400,
+            detail="Decision must be 'approved' or 'rejected'."
     )
 
     config = {
@@ -88,5 +91,8 @@ def submit_approval(
         "final_result": result.get("final_result"),
         "action": result.get("action"),
         "recovery_status": result.get("recovery_status"),
-        "retry_count": result.get("retry_count")
+        "retry_count": result.get("retry_count"),
+        "investigation": result.get("investigation"),
+        "verification_passed": result.get("verification_passed"),
+        "duration_seconds": result.get("duration_seconds")
     }
