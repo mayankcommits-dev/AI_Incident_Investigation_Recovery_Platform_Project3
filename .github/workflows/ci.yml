@@ -22,6 +22,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Ingest runbooks
+        run: |
+          python -m app.rag.ingest
+
       - name: Run automated tests
         run: |
           python -m pytest -q
